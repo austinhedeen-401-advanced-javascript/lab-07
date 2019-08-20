@@ -21,6 +21,8 @@
     "supertest": "^4.0.2"
   },
   "devDependencies": {
+    "mongodb-memory-server": "^5.2.0",
+    "mongoose": "^5.6.9",
     "nodemon": "^1.19.1"
   }
 }
