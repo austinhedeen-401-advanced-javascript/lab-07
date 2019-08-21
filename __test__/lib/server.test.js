@@ -29,4 +29,13 @@ describe('web server', () => {
 
   });
 
+  it('should respond properly to unknown resources', () => {
+    return mockRequest
+      .get('/asdf')
+      .then(results => {
+        expect(results.status).toBe(404);
+      })
+      .catch(console.error);
+  });
+
 });
