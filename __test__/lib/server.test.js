@@ -13,7 +13,7 @@ describe('web server', () => {
       .then(results => {
         expect(results.status).toBe(200);
         expect(results.body.count).toBe(0);
-      }).catch(console.error);
+      });
 
   });
 
@@ -25,7 +25,18 @@ describe('web server', () => {
       .then(results => {
         expect(results.status).toBe(200);
         expect(results.body.name).toBe('Test');
-      }).catch(console.error);
+      });
+
+  });
+
+  it('should respond properly on an invalid post to /categories', () => {
+
+    return mockRequest
+      .post('/categories')
+      .send({})
+      .then(results => {
+        expect(results.status).toBe(500);
+      });
 
   });
 
@@ -34,8 +45,7 @@ describe('web server', () => {
       .get('/asdf')
       .then(results => {
         expect(results.status).toBe(404);
-      })
-      .catch(console.error);
+      });
   });
 
 });
