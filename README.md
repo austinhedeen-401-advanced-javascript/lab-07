@@ -8,6 +8,9 @@
 * [submission PR](https://github.com/austinhedeen-401-advanced-javascript/lab-07/pull/1)
 * [travis](https://travis-ci.org/austinhedeen-401-advanced-javascript/lab-07/builds/574714527)
 
+#### Documentation
+* [api docs](https://app.swaggerhub.com/apis/Bejoty/lab-07/1.0.0)
+
 ### Modules
 #### `server.js`
 ##### Exported Values and Methods
