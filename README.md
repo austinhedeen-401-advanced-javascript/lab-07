@@ -22,7 +22,8 @@ The Express application server
 A function to start the application server
 
 #### Middleware
-##### `handle-status.js` - handles 404 and 500 status codes
+##### `404.js` - handles 404 status codes
+##### `error.js` - handles 500 status codes
 ##### `logger.js` - logs route access by clients
 ##### `request-time.js` - attaches the system time to requests
 ##### `validator.js` - validates POST requests
