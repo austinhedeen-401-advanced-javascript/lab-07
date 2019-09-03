@@ -29,6 +29,18 @@ describe('web server', () => {
 
   });
 
+  it('should now respond to /categories request with our record', () => {
+
+    return mockRequest
+      .get('/categories')
+      .then(results => {
+        expect(results.status).toBe(200);
+        expect(results.body.count).toBe(1);
+        expect(results.body.results[0].name).toEqual('Test');
+      });
+
+  });
+
   it('should respond properly on an invalid post to /categories', () => {
 
     return mockRequest
