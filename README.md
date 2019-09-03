@@ -7,6 +7,7 @@
 ### Links and Resources
 * [submission PR](https://github.com/austinhedeen-401-advanced-javascript/lab-07/pull/1)
 * [travis](https://travis-ci.org/austinhedeen-401-advanced-javascript/lab-07/builds/574714527)
+* [api-server](https://limitless-sierra-21853.herokuapp.com)
 
 #### Documentation
 * [api docs](https://app.swaggerhub.com/apis/Bejoty/lab-07/1.0.0)
@@ -33,15 +34,13 @@ A function to start the application server
 * `PORT` - Port Number
 
 #### Running the app
-* `npm start`
+* `npm run start`
 * Endpoint: `/categories/`
   * GET: Returns an array of category objects
   * POST: Creates and returns a category object
   
 #### Tests
-* How do you run tests?
-* What assertions were made?
-* What assertions need to be / should be made?
+* `npm run test`
 
 #### UML
 ![Process/Flow Diagram](assets/diagram-07.jpg)
